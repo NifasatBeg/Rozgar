@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">रोजगार</string>
+    <string name="Welcome">स्वागत हे</string>
+    <string name="Name">नाम</string>
+    <string name="Email">अपना ईमेल दर्ज करें</string>
+    <string name="Password">अपना कूटशब्द भरें</string>
+    <string name="Signin">लॉग इन करें</string>
+    <string name="forgotpass">पासवर्ड भूल गए?</string>
+    <string name="resetPass">अपना पासवर्ड रीसेट करें</string>
+    <string name="Register">पंजीकरण करें</string>
+    <string name="reqEmail">ईमेल जरुरी है।</string>
+    <string name="validEmail">कृपया एक मान्य ईमेल पता प्रवेश करें।</string>
+    <string name="reqPassword">पासवर्ड की आवश्यकता है।</string>
+    <string name="validPass">पासवर्ड की लंबाई कम से कम छह होनी चाहिए।</string>
+    <string name="verifymail">अपना खाता सत्यापित करने के लिए अपना ईमेल जांचें।</string>
+    <string name="verifyPass">अपने पासवर्ड को रिसेट करने के लिए अपनी ईमेल की जांच करें</string>
+    <string name="failedLogin">लॉगिन करने में विफल! कृपया अपनी साख की जाँच करें या नीचे पंजीकरण करें</string>
+    <string name="age">उम्र</string>
+    <string name="fullname">पूरा नाम आवश्यक है।</string>
+    <string name="reqAge">आयु की आवश्यकता है।</string>
+    <string name="SuccRegister">उपयोगकर्ता सफलतापूर्वक पंजीकृत हो गया है! लॉग इन पर वापस जाएं!</string>
+    <string name="failRegister">पंजीकरण करने में विफल! पुनः प्रयास करें</string>
+    <string name="Category">श्रेणी का चयन करें</string>
+    <string name="Language">भाषा बदलें</string>
+    <string name="EnterName">अपना नाम दर्ज करें</string>
+    <string name="Wrong">पुनः प्रयास करें! कुछ गलत हो गया</string>
+    <string name="Provider">कार्य प्रदाता</string>
+    <string name="seeker">काम साधक</string>
+    <string name="CategorySelection">कृपया एक श्रेणी चुनें</string>
+    <string name="PhoneNumber">फोन नंबर दर्ज।</string>
+    <string name="reqPhone">फ़ोन नंबर आवश्यक है.</string>
+    <string name="validPhone">कृपया एक मान्य फोन नंबर दर्ज करें</string>
+</resources>

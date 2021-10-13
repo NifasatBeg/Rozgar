@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Rozgar</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Name">Name</string>
+    <string name="Email">Enter Your Email</string>
+    <string name="Password">Enter the Password</string>
+    <string name="Signin">Login</string>
+    <string name="forgotpass">Forgot Password</string>
+    <string name="resetPass">Reset Password</string>
+    <string name="Register">Register</string>
+    <string name="reqEmail">Email is required</string>
+    <string name="validEmail">Please Enter a valid Email</string>
+    <string name="reqPassword">Password is required</string>
+    <string name="validPass">Password length should be at least 6</string>
+    <string name="verifymail">Check Your Email to verify your account.</string>
+    <string name="verifyPass">Check Your Email to reset your Password</string>
+    <string name="failedLogin">Failed to login! Please Check your Credentials Or Register below</string>
+    <string name="age">Age</string>
+    <string name="fullname">Full Name is Required</string>
+    <string name="reqAge">Age is required</string>
+    <string name="SuccRegister">User Has been registered Successfully! Go back to Login</string>
+    <string name="failRegister">Failed to Register! Try again</string>
+    <string name="Category">Choose Category</string>
+    <string name="Language">Change Language</string>
+    <string name="EnterName">Enter Your Name</string>
+    <string name="Wrong">Try Again! Something Went Wrong!</string>
+    <string name="Provider">Work Provider</string>
+    <string name="seeker">Work Seeker</string>
+    <string name="CategorySelection">Please Select the Category</string>
+    <string name="PhoneNumber">Enter Phone Number</string>
+    <string name="reqPhone">Phone Number is required</string>
+    <string name="validPhone">Please Enter a valid Phone Number</string>
+</resources>
