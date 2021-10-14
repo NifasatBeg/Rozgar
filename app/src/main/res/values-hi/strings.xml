@@ -31,4 +31,38 @@
     <string name="PhoneNumber">फोन नंबर दर्ज।</string>
     <string name="reqPhone">फ़ोन नंबर आवश्यक है.</string>
     <string name="validPhone">कृपया एक मान्य फोन नंबर दर्ज करें</string>
+    <string-array name="JobCategories">
+        <item>निर्माण</item>
+        <item>बागवानी</item>
+        <item>ड्राइविंग</item>
+        <item>शिक्षण</item>
+        <item>बेबी सिटिंग</item>
+        <item>रीति</item>
+    </string-array>
+    <string name="JobStatus">सभी नौकरी की स्थिति देखें</string>
+    <string name="WorkersReq">श्रमिकों की आवश्यकता है?</string>
+    <string name="CreateJobs">नौकरियां बनाएं</string>
+    <string name="Title">शीर्षक</string>
+    <string name="TitleHint">नौकरी का नाम</string>
+    <string name="JobCategory">कार्य श्रेणी</string>
+    <string name="NewCategory">श्रेणी</string>
+    <string name="Address">पता</string>
+    <string name="ContactNo">संपर्क संख्या</string>
+    <string name="Salary">वेतन</string>
+    <string name="Currency">रु.</string>
+    <string name="WorkingHrs">काम घंटे</string>
+    <string name="Workers">कर्मी</string>
+    <string name="WorkersNum">श्रमिकों की संख्या</string>
+    <string name="Description">विवरण</string>
+    <string name="JobDetails">नौकरी विवरण दर्ज करें</string>
+    <string name="PostJob">नौकरी पोस्ट करें</string>
+    <string name="RequestJobTitle">कृपया नौकरी का शीर्षक दर्ज करें</string>
+    <string name="RequestJobCategory">कृपया नौकरी की श्रेणी दर्ज करें</string>
+    <string name="RequestAddress">कृपया कार्य का पता दर्ज करें</string>
+    <string name="RequestContact">कृपया संपर्क नंबर दर्ज करें</string>
+    <string name="ValidContact">कृपया एक सही संख्या डालिये</string>
+    <string name="RequestWages">कृपया दैनिक मजदूरी राशि दर्ज करें</string>
+    <string name="RequestHrs">कृपया कार्य घंटों की संख्या दर्ज करें</string>
+    <string name="RequestWorkers">कृपया आवश्यक श्रमिकों की संख्या दर्ज करें</string>
+    <string name="JobCreated">नौकरी सृजित</string>
 </resources>

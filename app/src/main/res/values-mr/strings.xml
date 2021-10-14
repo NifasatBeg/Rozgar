@@ -31,4 +31,38 @@
     <string name="PhoneNumber">फोन नंबर प्रविष्ट करा.</string>
     <string name="reqPhone">फोन नंबर आवश्यक आहे.</string>
     <string name="validPhone">कृपया वैध दूरध्वनी क्रमांक टाका</string>
+    <string-array name="JobCategories">
+        <item>बांधकाम</item>
+        <item>बागकाम</item>
+        <item>वाहन चालवणे</item>
+        <item>शिक्षण</item>
+        <item>बाळ बसलेले</item>
+        <item>सानुकूल</item>
+    </string-array>
+    <string name="JobStatus">सर्व नोकरीची स्थिती पहा</string>
+    <string name="WorkersReq">कामगारांची गरज आहे का?</string>
+    <string name="CreateJobs">नोकऱ्या तयार करा</string>
+    <string name="Title">शीर्षक</string>
+    <string name="TitleHint">नोकरीचे शीर्षक</string>
+    <string name="JobCategory">नोकरी श्रेणी</string>
+    <string name="NewCategory">श्रेणी</string>
+    <string name="Address">पत्ता</string>
+    <string name="ContactNo">संपर्क क्रमांक</string>
+    <string name="Salary">वेतन</string>
+    <string name="Currency">रु.</string>
+    <string name="WorkingHrs">कार्यरत तास</string>
+    <string name="Workers">कामगार</string>
+    <string name="WorkersNum">कामगारांची संख्या</string>
+    <string name="Description">वर्णन</string>
+    <string name="JobDetails">नोकरी तपशील प्रविष्ट करा</string>
+    <string name="PostJob">नोकरी पोस्ट करा</string>
+    <string name="RequestJobTitle">कृपया नोकरीचे शीर्षक प्रविष्ट करा</string>
+    <string name="RequestJobCategory">कृपया नोकरीची श्रेणी प्रविष्ट करा</string>
+    <string name="RequestAddress">कृपया कामाचा पत्ता प्रविष्ट करा</string>
+    <string name="RequestContact">कृपया संपर्क क्रमांक प्रविष्ट करा</string>
+    <string name="ValidContact">कृपया एक वैध क्रमांक प्रविष्ट करा</string>
+    <string name="RequestWages">कृपया रोजंदारीची रक्कम प्रविष्ट करा</string>
+    <string name="RequestHrs">कृपया कामाच्या तासांची संख्या प्रविष्ट करा</string>
+    <string name="RequestWorkers">कृपया आवश्यक कामगारांची संख्या प्रविष्ट करा</string>
+    <string name="JobCreated">नोकरी निर्माण झाली</string>
 </resources>

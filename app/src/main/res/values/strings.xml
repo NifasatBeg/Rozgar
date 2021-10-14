@@ -30,4 +30,38 @@
     <string name="PhoneNumber">Enter Phone Number</string>
     <string name="reqPhone">Phone Number is required</string>
     <string name="validPhone">Please Enter a valid Phone Number</string>
+    <string-array name="JobCategories">
+        <item>Construction</item>
+        <item>Gardening</item>
+        <item>Driving</item>
+        <item>Teaching</item>
+        <item>BabySitting</item>
+        <item>Custom</item>
+    </string-array>
+    <string name="JobStatus">View Your Jobs Status</string>
+    <string name="WorkersReq">Need Workers?</string>
+    <string name="CreateJobs">Create Jobs</string>
+    <string name="Title">Title</string>
+    <string name="TitleHint">Job Title</string>
+    <string name="JobCategory">Job Category</string>
+    <string name="NewCategory">Category</string>
+    <string name="Address">Address</string>
+    <string name="ContactNo">Contact No</string>
+    <string name="Salary">Salary</string>
+    <string name="Currency">Rs.</string>
+    <string name="WorkingHrs">Working Hrs</string>
+    <string name="Workers">Workers</string>
+    <string name="WorkersNum">Number of Workers</string>
+    <string name="Description">Description</string>
+    <string name="JobDetails">Enter Job Details</string>
+    <string name="PostJob">Post Job</string>
+    <string name="RequestJobTitle">Please Enter Job Title</string>
+    <string name="RequestJobCategory">Please Enter Category of Job</string>
+    <string name="RequestAddress">Please Enter Address Of Work</string>
+    <string name="RequestContact">Please Enter Contact Number</string>
+    <string name="ValidContact">Please Enter a Valid Number</string>
+    <string name="RequestWages">Please Enter the Daily wages amount</string>
+    <string name="RequestHrs">Please Enter Number of Working Hours</string>
+    <string name="RequestWorkers">Please Enter Number of Workers Required</string>
+    <string name="JobCreated">Job Created</string>
 </resources>

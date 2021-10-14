@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RozgarProject">
         <activity
+            android:name=".PersonalJobsCreated"
+            android:exported="true" />
+        <activity
+            android:name=".PostJobActivity"
+            android:exported="true" />
+        <activity
             android:name=".WorkSeeker"
             android:exported="true" />
         <activity
