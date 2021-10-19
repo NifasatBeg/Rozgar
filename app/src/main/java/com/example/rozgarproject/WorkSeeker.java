@@ -13,7 +13,7 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_work_provider);
+        setContentView(R.layout.activity_work_seeker);
         Button AppliedJobs = (Button) findViewById(R.id.AppliedJobs);
         Button SearchJob = (Button) findViewById(R.id.Search_Job);
         AppliedJobs.setOnClickListener(WorkSeeker.this);
