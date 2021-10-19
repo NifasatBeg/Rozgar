@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RozgarProject">
         <activity
+            android:name=".Openings"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalJobsApplied"
+            android:exported="false" />
+        <activity
             android:name=".PersonalJobsCreated"
             android:exported="true" />
         <activity
