@@ -54,8 +54,17 @@ public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.JobsView
 
         @Override
         public void onClick(View view) {
+            int position = this.getAdapterPosition();
+            JobPost currItem = list.get(position);
+            String title = currItem.getJobTitle();
+            String jobDate = currItem.getJobDate();
+            String numberOfWorkers = currItem.getNumberofWorkers();
+
             Intent intent = new Intent(context,Personal_job_list_details.class);
-//            intent.putExtra();
+            intent.putExtra("title",title);
+            intent.putExtra("date",jobDate);
+            intent.putExtra("numberOfWorkers",numberOfWorkers);
+
             context.startActivity(intent);
         }
     }
