@@ -77,7 +77,7 @@ public class PostJobActivity extends AppCompatActivity implements AdapterView.On
     @Override
     public void onClick(View view) {
         if(category.equals("Custom"))
-           category = newCategory.getText().toString().trim();
+            category = newCategory.getText().toString().trim();
         String categorySelected = category;
         String title = JobTitle.getText().toString().trim();
         String location = address.getText().toString().trim();
@@ -142,7 +142,7 @@ public class PostJobActivity extends AppCompatActivity implements AdapterView.On
         String PhoneNumber = contact;
         String id = mJobPost.push().getKey();
         String date = DateFormat.getDateInstance().format(new Date());
-        NewJobs job = new NewJobs(title,categorySelected,location,wages,workingTime,numberofWorkers,details,id,date,PhoneNumber);
+        NewJobs job = new NewJobs(title,categorySelected,location,wages,workingTime,numberofWorkers,details,mAuth.getCurrentUser().getUid(),date,PhoneNumber,id);
         mJobPost.child(id).setValue(job);
         Toast.makeText(PostJobActivity.this,getResources().getString(R.string.JobCreated),Toast.LENGTH_SHORT).show();
     }
