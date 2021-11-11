@@ -17,55 +17,50 @@ import java.util.List;
 
 public class ApprovedLabourAdapter extends RecyclerView.Adapter<ApprovedLabourAdapter.ViewHolder> {
 
-    private Personal_job_list_details context;
+    private Personal_job_list_details activity;
     private List<ApprovedLabour> approvedLabourList;
 
-    public ApprovedLabourAdapter(Personal_job_list_details context, List<ApprovedLabour> approvedLabourList) {
-        this.context = context;
-        this.approvedLabourList = approvedLabourList;
+    public ApprovedLabourAdapter(Personal_job_list_details activity){
+        this.activity = activity;
     }
 
-    @NonNull
-    @Override
-    public ApprovedLabourAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_personal_job_list_details,parent, false);
-        return new ViewHolder(view);
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemview = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_approved_labours,parent, false);
+        return new ViewHolder(itemview);
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        ApprovedLabour approvedLabour = approvedLabourList.get(position);
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        ApprovedLabour item= approvedLabourList.get(position);
 
-        holder.LabourName.setText(approvedLabour.getName());
-        holder.Age.setText(approvedLabour.getAge());
-        holder.ContactNumber.setText(approvedLabour.getContactNumber());
+        holder.LabourName.setText(item.getName());
+        holder.Age.setText(item.getAge());
+        holder.ContactNumber.setText(item.getContactNumber());
 
     }
 
-    @Override
     public int getItemCount() {
         return approvedLabourList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public void setApprovedLabourList(List<ApprovedLabour> approvedLabourList){
+        this.approvedLabourList = approvedLabourList;
+        notifyDataSetChanged();
+    }
+
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView LabourName;
         public TextView Age;
         public TextView ContactNumber;
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(View itemView) {
             super(itemView);
-            itemView.setOnClickListener(this);
-
             LabourName = itemView.findViewById(R.id.LabourName);
             Age = itemView.findViewById(R.id.LabourAge);
             ContactNumber = itemView.findViewById(R.id.LabourNumber);
-
         }
 
-        @Override
-        public void onClick(View view) {
 
-        }
     }
 }
