@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.rozgarproject.Adapter.ApprovedLabourAdapter;
+import com.example.rozgarproject.Adapter.RequestListAdapter;
 import com.example.rozgarproject.Models.ApprovedLabour;
 import com.example.rozgarproject.Models.Request;
 
@@ -22,6 +23,9 @@ public class Personal_job_list_details extends AppCompatActivity {
     private ApprovedLabourAdapter approvedLabourAdapter;
     public List<ApprovedLabour> approvedLabourArrayList;
 
+    public RecyclerView recyclerView2;
+    private RequestListAdapter requestListAdapter;
+    public List<Request> requestList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +45,7 @@ public class Personal_job_list_details extends AppCompatActivity {
         RequiredWorkers.setText(numberOfWorkers);
 
         approvedLabourArrayList = new ArrayList<>();
+        requestList = new ArrayList<>();
 
 
 
@@ -50,11 +55,22 @@ public class Personal_job_list_details extends AppCompatActivity {
         approvedLabourAdapter = new ApprovedLabourAdapter(this);
         recyclerView1.setAdapter(approvedLabourAdapter);
 
-        ApprovedLabour rohan = new ApprovedLabour("Rohan Bondre", "12", "7249132220");
+        recyclerView2 = findViewById(R.id.RequestList);
+        recyclerView2.setLayoutManager(new LinearLayoutManager(this));
+        requestListAdapter = new RequestListAdapter(this);
+        recyclerView2.setAdapter(requestListAdapter);
+
+        ApprovedLabour rohan = new ApprovedLabour("Name : Rohan Bondre", "Age : 12", "Contact no : 7249132220");
         approvedLabourArrayList.add(rohan);
         approvedLabourArrayList.add(rohan);
 
+
+        Request rohan1 = new Request("Name : Nifasat Beg", "Age : 21", "Contact no : 7249132220");
+        requestList.add(rohan1);
+        requestList.add(rohan1);
+
         approvedLabourAdapter.setApprovedLabourList(approvedLabourArrayList);
+        requestListAdapter.setRequestList(requestList);
 
 
 //        approvedLabourAdapter.setTasks(approvedLabourArrayList);
