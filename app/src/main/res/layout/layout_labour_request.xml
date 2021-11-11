@@ -3,41 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_marginVertical="10dp"
     android:layout_marginHorizontal="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/ContactNumber"
+            android:id="@+id/RAge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Age : 35"
-            app:layout_constraintBottom_toTopOf="@+id/allJobWorkers"
-            app:layout_constraintStart_toStartOf="@+id/allJobWorkers"
-            app:layout_constraintTop_toBottomOf="@+id/LabourName"></TextView>
+            app:layout_constraintBottom_toTopOf="@+id/RContactNumber"
+            app:layout_constraintStart_toStartOf="@+id/RContactNumber"
+            app:layout_constraintTop_toBottomOf="@+id/RLabourName"></TextView>
 
         <TextView
-            android:id="@+id/LabourName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/RLabourName"
+            android:layout_width="132dp"
+            android:layout_height="18dp"
             android:text="Name : Rohan Bondre"
-            app:layout_constraintBottom_toTopOf="@+id/ContactNumber"
-            app:layout_constraintStart_toStartOf="@+id/ContactNumber"
+            app:layout_constraintBottom_toTopOf="@+id/RAge"
+            app:layout_constraintStart_toStartOf="@+id/RAge"
             app:layout_constraintTop_toTopOf="parent"></TextView>
 
         <TextView
-            android:id="@+id/allJobWorkers"
+            android:id="@+id/RContactNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contact : 9897654321"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ContactNumber"
-            tools:layout_editor_absoluteX="54dp"
-            tools:ignore="MissingConstraints"></TextView>
+            app:layout_constraintTop_toBottomOf="@+id/RAge"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="91dp"></TextView>
 
         <Button
             android:id="@+id/Accept"
@@ -57,8 +57,8 @@
             android:text="REJECT"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Accept"
-            tools:layout_editor_absoluteX="272dp"
-            tools:ignore="MissingConstraints"></Button>
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="272dp"></Button>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
