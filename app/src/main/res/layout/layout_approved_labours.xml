@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/LabourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : Rohan Bondre"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"></TextView>
+        <TextView
+            android:id="@+id/LabourAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : 35"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"></TextView>
+        <TextView
+            android:id="@+id/LabourNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact : 9897654321"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"></TextView>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

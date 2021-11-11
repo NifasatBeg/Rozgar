@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ContactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : 35"
+            app:layout_constraintBottom_toTopOf="@+id/allJobWorkers"
+            app:layout_constraintStart_toStartOf="@+id/allJobWorkers"
+            app:layout_constraintTop_toBottomOf="@+id/LabourName"></TextView>
+
+        <TextView
+            android:id="@+id/LabourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : Rohan Bondre"
+            app:layout_constraintBottom_toTopOf="@+id/ContactNumber"
+            app:layout_constraintStart_toStartOf="@+id/ContactNumber"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/allJobWorkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact : 9897654321"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ContactNumber"
+            tools:layout_editor_absoluteX="54dp"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <Button
+            android:id="@+id/Accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="ACCEPT"
+            app:layout_constraintBottom_toTopOf="@+id/Reject"
+            app:layout_constraintEnd_toEndOf="@+id/Reject"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/Reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="REJECT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Accept"
+            tools:layout_editor_absoluteX="272dp"
+            tools:ignore="MissingConstraints"></Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
