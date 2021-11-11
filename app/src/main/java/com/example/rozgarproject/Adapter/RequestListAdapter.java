@@ -57,9 +57,9 @@ public class RequestListAdapter extends RecyclerView.Adapter<RequestListAdapter.
 
         public ViewHolder(View itemView) {
             super(itemView);
-            LabourName = itemView.findViewById(R.id.LabourName);
-            Age = itemView.findViewById(R.id.LabourAge);
-            ContactNumber = itemView.findViewById(R.id.LabourNumber);
+            LabourName = itemView.findViewById(R.id.RLabourName);
+            Age = itemView.findViewById(R.id.RAge);
+            ContactNumber = itemView.findViewById(R.id.RContactNumber);
         }
 
 
