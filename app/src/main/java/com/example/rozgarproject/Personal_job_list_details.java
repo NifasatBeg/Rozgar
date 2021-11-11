@@ -63,6 +63,10 @@ public class Personal_job_list_details extends AppCompatActivity {
         ApprovedLabour rohan = new ApprovedLabour("Name : Rohan Bondre", "Age : 12", "Contact no : 7249132220");
         approvedLabourArrayList.add(rohan);
         approvedLabourArrayList.add(rohan);
+        approvedLabourArrayList.add(rohan);
+        approvedLabourArrayList.add(rohan);
+        approvedLabourArrayList.add(rohan);
+        approvedLabourArrayList.add(rohan);
 
 
         Request rohan1 = new Request("Name : Nifasat Beg", "Age : 21", "Contact no : 7249132220");
