@@ -1,6 +1,7 @@
 package com.example.rozgarproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,13 +39,24 @@ public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.JobsView
         return list.size();
     }
 
-    public class JobsViewAdapter extends RecyclerView.ViewHolder {
+    public class JobsViewAdapter extends RecyclerView.ViewHolder implements View.OnClickListener {
+
         TextView JobTitle,JobDate,NumberofWorkers;
+
         public JobsViewAdapter(@NonNull View itemView) {
             super(itemView);
+            itemView.setOnClickListener(this);
+
             JobTitle = itemView.findViewById(R.id.JobTitle);
             JobDate = itemView.findViewById(R.id.JobDate);
             NumberofWorkers = itemView.findViewById(R.id.WorkersNumber);
+        }
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(context,Personal_job_list_details.class);
+//            intent.putExtra();
+            context.startActivity(intent);
         }
     }
 }
