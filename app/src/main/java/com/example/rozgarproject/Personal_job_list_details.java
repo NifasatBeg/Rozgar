@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Personal_job_list_details extends AppCompatActivity {
+
 
     public interface MyCallback {
         void onCallback(List<String> value);
@@ -53,6 +55,17 @@ public class Personal_job_list_details extends AppCompatActivity {
         });
     }
 
+    public String fetchID(String mixID) {
+        String tmp = "";
+        for (int i = 0; i < mixID.length(); i++) {
+            if (mixID.charAt(i) == '$') return tmp;
+            else {
+                tmp += mixID.charAt(i);
+            }
+
+        }
+        return tmp;
+    }
     DatabaseReference reference;
 
     public RecyclerView recyclerView1;
@@ -81,6 +94,7 @@ public class Personal_job_list_details extends AppCompatActivity {
         TextView RequiredWorkers = findViewById(R.id.RequiredSlot);
 //        String tmp = "Required Workers : " + RequiredWorkers;
         RequiredWorkers.setText(numberOfWorkers);
+
 
         approvedLabourArrayList = new ArrayList<>();
         requestList = new ArrayList<>();
@@ -124,13 +138,14 @@ public class Personal_job_list_details extends AppCompatActivity {
                             String jname = ds.child("fullName").getValue(String.class);
                             String jage = ds.child("age").getValue(String.class);
                             String jnumber = ds.child("phoneNumber").getValue(String.class);
+
                             if(tmpID1.endsWith("1")){
-                                Request rohan1 = new Request(jname, jage, jnumber);
+                                Request rohan1 = new Request("Name : " + jname, "Age : "+jage, "Contact number : "+jnumber, fetchID(tmpID1));
                                 requestList.add(rohan1);
                             }
                             else {
 
-                                ApprovedLabour rohan = new ApprovedLabour(jname, jage, jnumber);
+                                ApprovedLabour rohan = new ApprovedLabour("Name : " + jname, "Age : "+jage, "Contact number : "+jnumber);
                                 approvedLabourArrayList.add(rohan);
 
 
@@ -157,33 +172,6 @@ public class Personal_job_list_details extends AppCompatActivity {
         for(String tmp : userIDlist) {
             Log.d("dbrohan", tmp);
         }
-
-
-
-
-
-
-
-
-//        ApprovedLabour rohan = new ApprovedLabour("Name : Rohan Bondre", "Age : 12", "Contact no : 7249132220");
-//        approvedLabourArrayList.add(rohan);
-//        approvedLabourArrayList.add(rohan);
-//        approvedLabourArrayList.add(rohan);
-//        approvedLabourArrayList.add(rohan);
-//        approvedLabourArrayList.add(rohan);
-//        approvedLabourArrayList.add(rohan);
-
-
-//        Request rohan1 = new Request("Name : Nifasat Beg", "Age : 21", "Contact no : 7249132220");
-//        requestList.add(rohan1);
-//        requestList.add(rohan1);
-
-
-
-
-
-//        approvedLabourAdapter.setTasks(approvedLabourArrayList);
-
 
     }
 }

@@ -1,14 +1,14 @@
 package com.example.rozgarproject.Models;
 
 public class Request {
-    String name, age, contactNumber;
+    String name, age, contactNumber,userID;
 //    boolean accept, reject;
 
-    public Request(String name, String age, String contactNumber) {
+    public Request(String name, String age, String contactNumber, String userID) {
         this.name = name;
         this.age = age;
         this.contactNumber = contactNumber;
-
+        this.userID = userID;
     }
 
     public String getName() {
@@ -33,5 +33,13 @@ public class Request {
 
     public void setContactNumber(String contactNumber) {
         this.contactNumber = contactNumber;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 }
