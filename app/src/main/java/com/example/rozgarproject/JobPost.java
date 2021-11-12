@@ -1,14 +1,15 @@
 package com.example.rozgarproject;
 
 public class JobPost {
-    String JobTitle,JobDate,NumberofWorkers;
+    String JobTitle,JobDate,NumberofWorkers,JobID;
     public JobPost(){
 
     }
-    public JobPost(String JobTitle,String JobDate,String NumberofWorkers){
+    public JobPost(String JobTitle,String JobDate,String NumberofWorkers, String JobID){
         this.JobTitle = JobTitle;
         this.JobDate = JobDate;
         this.NumberofWorkers = NumberofWorkers;
+        this.JobID = JobID;
     }
     public String getJobTitle(){
         return JobTitle;
@@ -20,4 +21,7 @@ public class JobPost {
         return NumberofWorkers;
     }
 
+    public String getJobID() {
+        return JobID;
+    }
 }

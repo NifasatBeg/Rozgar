@@ -32,6 +32,7 @@ public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.JobsView
             holder.JobTitle.setText(currItem.getJobTitle());
             holder.JobDate.setText(currItem.getJobDate());
             holder.NumberofWorkers.setText(currItem.getNumberofWorkers());
+            holder.JobID.setText(currItem.getJobID());
     }
 
     @Override
@@ -41,7 +42,7 @@ public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.JobsView
 
     public class JobsViewAdapter extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView JobTitle,JobDate,NumberofWorkers;
+        TextView JobTitle,JobDate,NumberofWorkers,JobID;
 
         public JobsViewAdapter(@NonNull View itemView) {
             super(itemView);
@@ -50,6 +51,7 @@ public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.JobsView
             JobTitle = itemView.findViewById(R.id.JobTitle);
             JobDate = itemView.findViewById(R.id.JobDate);
             NumberofWorkers = itemView.findViewById(R.id.WorkersNumber);
+            JobID = itemView.findViewById(R.id.PostJobID);
         }
 
         @Override
@@ -59,11 +61,14 @@ public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.JobsView
             String title = currItem.getJobTitle();
             String jobDate = currItem.getJobDate();
             String numberOfWorkers = currItem.getNumberofWorkers();
+            String JobpostID = currItem.getJobID();
+
 
             Intent intent = new Intent(context,Personal_job_list_details.class);
             intent.putExtra("title",title);
             intent.putExtra("date",jobDate);
             intent.putExtra("numberOfWorkers",numberOfWorkers);
+            intent.putExtra("JobPostID",JobpostID);
 
             context.startActivity(intent);
         }

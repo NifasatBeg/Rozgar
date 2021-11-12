@@ -43,6 +43,16 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#000000"></TextView>
 
+        <TextView
+            android:id="@+id/PostJobID"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Workers Remaining"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"></TextView>
+
     </LinearLayout>
 
 
