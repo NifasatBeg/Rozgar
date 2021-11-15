@@ -3,6 +3,7 @@ package com.example.rozgarproject.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -53,12 +54,21 @@ public class ApprovedLabourAdapter extends RecyclerView.Adapter<ApprovedLabourAd
         public TextView LabourName;
         public TextView Age;
         public TextView ContactNumber;
+        public ImageView Connectphone;
 
         public ViewHolder(View itemView) {
             super(itemView);
             LabourName = itemView.findViewById(R.id.LabourName);
             Age = itemView.findViewById(R.id.LabourAge);
             ContactNumber = itemView.findViewById(R.id.LabourNumber);
+            Connectphone = itemView.findViewById(R.id.connectPhone);
+            Connectphone.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
+
         }
 
 
