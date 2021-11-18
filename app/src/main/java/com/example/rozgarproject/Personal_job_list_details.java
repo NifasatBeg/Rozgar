@@ -112,7 +112,7 @@ public class Personal_job_list_details extends AppCompatActivity {
 
                 recyclerView2 = findViewById(R.id.RequestList);
                 recyclerView2.setLayoutManager(new LinearLayoutManager(Personal_job_list_details.this));
-                requestListAdapter = new RequestListAdapter(Personal_job_list_details.this);
+
 
 
 
@@ -138,22 +138,20 @@ public class Personal_job_list_details extends AppCompatActivity {
                             String jname = ds.child("fullName").getValue(String.class);
                             String jage = ds.child("age").getValue(String.class);
                             String jnumber = ds.child("phoneNumber").getValue(String.class);
+                            Log.d("task",jname + jage + jobID + jnumber);
 
                             if(tmpID1.endsWith("1")){
-                                Request rohan1 = new Request("Name : " + jname, "Age : "+jage, "Contact number : "+jnumber, fetchID(tmpID1));
+                                Request rohan1 = new Request("Name : " + jname, "Age : "+jage, "Contact number : "+jnumber, fetchID(tmpID1),jobID);
                                 requestList.add(rohan1);
                             }
-                            else {
+                            else if(tmpID1.endsWith("2")){
 
                                 ApprovedLabour rohan = new ApprovedLabour("Name : " + jname, "Age : "+jage, "Contact number : "+jnumber);
                                 approvedLabourArrayList.add(rohan);
-
-
                             }
-                            ApprovedLabour rohan3 = new ApprovedLabour("Name : Rohan Bondre", "Age : 12", "Contact no : 7249132220");
-                            approvedLabourArrayList.add(rohan3);
                         }
-
+                        requestListAdapter = new RequestListAdapter(Personal_job_list_details.this);
+                        requestListAdapter.setRequestList(requestList);
                         requestListAdapter.setRequestList(requestList);
                         approvedLabourAdapter.setApprovedLabourList(approvedLabourArrayList);
 
