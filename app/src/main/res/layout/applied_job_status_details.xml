@@ -54,13 +54,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appluedStatus"
             tools:ignore="MissingConstraints"></TextView>
+
         <TextView
             android:id="@+id/StatusJobId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Applied Job ID"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
+            android:text="Applied Job ID"
             android:visibility="gone"
             tools:ignore="MissingConstraints"></TextView>
     </androidx.constraintlayout.widget.ConstraintLayout>

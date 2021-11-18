@@ -26,7 +26,7 @@
     <string name="Language">Change Language</string>
     <string name="EnterName">Enter Your Name</string>
     <string name="Wrong">Try Again! Something Went Wrong!</string>
-    <string name="Provider">Work Provider</string>
+    <string name="Provider"><u>Work Provider</u></string>
     <string name="seeker">Work Seeker</string>
     <string name="CategorySelection">Please Select the Category</string>
     <string name="PhoneNumber">Enter Phone Number</string>
@@ -42,7 +42,7 @@
     </string-array>
     <string name="JobStatus">View Your Jobs Status</string>
     <string name="WorkersReq">Need Workers?</string>
-    <string name="CreateJobs">Create Jobs</string>
+    <string name="CreateJobs"><u>Create Jobs</u></string>
     <string name="Title">Title</string>
     <string name="TitleHint">Job Title</string>
     <string name="JobCategory">Job Category</string>

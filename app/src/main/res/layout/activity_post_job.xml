@@ -5,38 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PostJobActivity">
-    <TextView
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/CreateJobs"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="30dp"
-        />
+
     <LinearLayout
         android:id="@+id/titleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/banner">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10">
+
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Title"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/Title"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"></TextView>
 
@@ -44,56 +34,65 @@
             android:id="@+id/titleEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:layout_marginLeft="65dp"
             android:hint="@string/TitleHint"
-            android:layout_marginLeft="65dp">
-        </EditText>
+            android:inputType="text"></EditText>
     </LinearLayout>
+
     <LinearLayout
-        android:id = "@+id/category"
+        android:id="@+id/category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleLayout">
-    <TextView
-        android:id="@+id/JobCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/JobCategory"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:layout_marginLeft="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        ></TextView>
-    <Spinner
-        android:id="@+id/JobCategorySpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        ></Spinner>
 
-        ></LinearLayout>
+        <TextView
+            android:id="@+id/JobCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/JobCategory"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"></TextView>
+
+        <Spinner
+            android:id="@+id/JobCategorySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"></Spinner>
+
+        >
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/newCategoryLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/category">
+
         <TextView
             android:id="@+id/newCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/NewCategory"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/NewCategory"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"></TextView>
 
@@ -101,27 +100,31 @@
             android:id="@+id/newCategoryEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:layout_marginLeft="37dp">
-        </EditText>
+            android:layout_marginLeft="35dp"
+            android:inputType="text"></EditText>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/locationLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newCategoryLayout">
+
         <TextView
             android:id="@+id/Location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Address"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/Address"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/banner"></TextView>
@@ -130,181 +133,271 @@
             android:id="@+id/locationEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:layout_marginLeft="42dp">
-        </EditText>
+            android:layout_marginLeft="40dp"
+            android:inputType="text"></EditText>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/contactLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/locationLayout">
+
         <TextView
             android:id="@+id/contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ContactNo"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/ContactNo"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            ></TextView>
+            app:layout_constraintRight_toRightOf="parent"></TextView>
 
         <EditText
             android:id="@+id/contactInfoEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:layout_marginLeft="20dp">
-        </EditText>
+            android:layout_marginLeft="20dp"
+            android:inputType="phone"></EditText>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/salaryLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contactLayout">
+
         <TextView
             android:id="@+id/salary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Salary"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/Salary"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            ></TextView>
+            app:layout_constraintRight_toRightOf="parent"></TextView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
             android:text="@string/Currency"
-            android:textSize="20sp"
             android:textColor="#000000"
-            android:layout_marginLeft="55dp"
-            ></TextView>
+            android:textSize="20sp"></TextView>
 
         <EditText
             android:id="@+id/salaryEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:inputType="number">
-        </EditText>
+            android:inputType="number"></EditText>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/HrsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/salaryLayout">
+
         <TextView
             android:id="@+id/hrs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/WorkingHrs"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/WorkingHrs"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            ></TextView>
+            app:layout_constraintRight_toRightOf="parent"></TextView>
 
         <EditText
             android:id="@+id/HrsEditText"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:layout_marginLeft="19dp">
-        </EditText>
+            android:layout_marginLeft="19dp"
+            android:inputType="number"></EditText>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hrs/day"
             android:textColor="#000000"
-            android:textStyle="bold"
-            ></TextView>
+            android:textStyle="bold"></TextView>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/workersLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HrsLayout">
+
         <TextView
             android:id="@+id/Workers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Workers"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/Workers"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            ></TextView>
+            app:layout_constraintRight_toRightOf="parent"></TextView>
 
         <EditText
             android:id="@+id/workersEditText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="43dp"
+            android:layout_marginLeft="45dp"
             android:hint="@string/WorkersNum"
             android:inputType="number"></EditText>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/descriptionLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/workersLayout">
+
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Description"
-            android:textStyle="bold"
-            android:textColor="#000000"
             android:layout_marginLeft="20dp"
+            android:text="@string/Description"
+            android:textColor="#000000"
+            android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            ></TextView>
+            app:layout_constraintRight_toRightOf="parent"></TextView>
 
         <EditText
             android:id="@+id/jobDescriptionEditText"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="27dp"
+            android:layout_marginLeft="25dp"
             android:hint="@string/JobDetails"
-            android:inputType="text">
-        </EditText>
+            android:inputType="text"></EditText>
     </LinearLayout>
+
     <Button
         android:id="@+id/PostJob"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="2dp"
         android:text="@string/PostJob"
         android:textStyle="bold"
-        android:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLayout"></Button>
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionLayout"
-        ></Button>
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_job" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/a_new_future"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:text="@string/CreateJobs"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

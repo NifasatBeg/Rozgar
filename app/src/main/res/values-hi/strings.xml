@@ -27,7 +27,7 @@
     <string name="Language">भाषा बदलें</string>
     <string name="EnterName">अपना नाम दर्ज करें</string>
     <string name="Wrong">पुनः प्रयास करें! कुछ गलत हो गया</string>
-    <string name="Provider">कार्य प्रदाता</string>
+    <string name="Provider"><u>कार्य प्रदाता</u></string>
     <string name="seeker">काम साधक</string>
     <string name="CategorySelection">कृपया एक श्रेणी चुनें</string>
     <string name="PhoneNumber">फोन नंबर दर्ज।</string>
@@ -43,7 +43,7 @@
     </string-array>
     <string name="JobStatus">सभी नौकरी की स्थिति देखें</string>
     <string name="WorkersReq">श्रमिकों की आवश्यकता है?</string>
-    <string name="CreateJobs">नौकरियां बनाएं</string>
+    <string name="CreateJobs"><u>नौकरियां बनाएं</u></string>
     <string name="Title">शीर्षक</string>
     <string name="TitleHint">नौकरी का नाम</string>
     <string name="JobCategory">कार्य श्रेणी</string>
