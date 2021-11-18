@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">रोजगार</string>
-    <string name="Welcome">स्वागत आहे</string>
+    <string name="Welcome"><u>स्वागत आहे</u></string>
+    <string name="NewUser">नवीन वापरकर्ता?</string>
     <string name="Name">नाव</string>
     <string name="Email">तुमचा ईमेल टाकां</string>
     <string name="Password">तुमचा पासवर्ड एंटर करा</string>
     <string name="Signin">लॉगिन करा</string>
     <string name="forgotpass">पासवर्ड विसरलात?</string>
-    <string name="resetPass">पासवर्ड रीसेट करा</string>
-    <string name="Register">नोंदणी करा</string>
+    <string name="resetPass"><u>पासवर्ड रीसेट करा</u></string>
+    <string name="Register"><u>नोंदणी करा</u></string>
+    <string name="a_new_future">एक नया भविष्य</string>
     <string name="reqEmail">ईमेल आवश्यक आहे.</string>
     <string name="validEmail">एक वैध ईमेल प्रविष्ट करा.</string>
     <string name="reqPassword">संकेतशब्द आवश्यक आहे.</string>
@@ -65,4 +67,5 @@
     <string name="RequestHrs">कृपया कामाच्या तासांची संख्या प्रविष्ट करा</string>
     <string name="RequestWorkers">कृपया आवश्यक कामगारांची संख्या प्रविष्ट करा</string>
     <string name="JobCreated">नोकरी निर्माण झाली</string>
+    <string name="SearchJobs">उपलब्ध उघडणे</string>
 </resources>

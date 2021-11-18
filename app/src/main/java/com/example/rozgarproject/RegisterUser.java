@@ -26,7 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterUser extends AppCompatActivity implements View.OnClickListener {
     static String categorySelected = "0";
-    private TextView banner,registerUser,CategoryBtn;
+    private TextView registerUser,CategoryBtn;
     private EditText editTextFullName,editTextAge,editTextEmail,editTextPassword,editTextNumber;
     private ProgressBar progressBar;
     private FirebaseAuth mAuth;
@@ -42,7 +42,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         editTextEmail = (EditText) findViewById(R.id.email);
         editTextPassword = (EditText) findViewById(R.id.password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        CategoryBtn = (Button) findViewById(R.id.Category);
+        CategoryBtn = (TextView) findViewById(R.id.Category);
         CategoryBtn.setOnClickListener(RegisterUser.this);
         editTextNumber = (EditText) findViewById(R.id.Number);
     }

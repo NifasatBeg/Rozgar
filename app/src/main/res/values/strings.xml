@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">Rozgar</string>
-    <string name="Welcome">Welcome</string>
+    <string name="Welcome"><u>Welcome</u></string>
+    <string name="NewUser">New User?</string>
     <string name="Name">Name</string>
     <string name="Email">Enter Your Email</string>
     <string name="Password">Enter the Password</string>
     <string name="Signin">Login</string>
-    <string name="forgotpass">Forgot Password</string>
-    <string name="resetPass">Reset Password</string>
-    <string name="Register">Register</string>
+    <string name="forgotpass">Forgot Password?</string>
+    <string name="resetPass"><u>Reset Password</u></string>
+    <string name="a_new_future">A NEW FUTURE</string>
+    <string name="Register"><u>Register</u></string>
     <string name="reqEmail">Email is required</string>
     <string name="validEmail">Please Enter a valid Email</string>
     <string name="reqPassword">Password is required</string>
@@ -65,4 +67,5 @@
     <string name="RequestWorkers">Please Enter Number of Workers Required</string>
     <string name="JobCreated">Job Created</string>
     <string name="SearchJobs">Available Openings</string>
+
 </resources>
