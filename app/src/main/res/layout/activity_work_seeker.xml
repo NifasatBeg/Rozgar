@@ -5,10 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkProvider">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/AppliedStatusbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Status" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,6 +88,8 @@
             android:layout_marginTop="10dp">
 
         </androidx.recyclerview.widget.RecyclerView>
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

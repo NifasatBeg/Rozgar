@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WorkSeeker extends AppCompatActivity implements View.OnClickListener{
-    Button filter,viewAll,applyFilter;
+    Button filter,viewAll,applyFilter,viewStatusofApplied;
     EditText location,salary;
     RecyclerView recyclerView;
     List<allJobs> list;
@@ -39,6 +39,8 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
         applyFilter = findViewById(R.id.ApplyFilter);
         location = findViewById(R.id.SearchLocation);
         salary = findViewById(R.id.SearchSalary);
+        viewStatusofApplied = findViewById(R.id.AppliedStatusbutton);
+        viewStatusofApplied.setOnClickListener(WorkSeeker.this);
         filter.setOnClickListener(WorkSeeker.this);
         viewAll.setOnClickListener(WorkSeeker.this);
         applyFilter.setOnClickListener(WorkSeeker.this);
@@ -100,6 +102,9 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
                 charSequence += salary.getText().toString();
                 adapter.getFilter().filter(charSequence);
                 break;
+            case  R.id.AppliedStatusbutton:
+                Intent intent = new Intent(WorkSeeker.this,ViewAppliedStatus.class);
+                startActivity(intent);
         }
     }
 }

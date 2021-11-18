@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:elevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/allJobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JobTitle"
+            app:layout_constraintBottom_toTopOf="@+id/allJobLocation"
+            app:layout_constraintStart_toStartOf="@+id/allJobLocation"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/allJobLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JobLocation"
+            app:layout_constraintBottom_toTopOf="@+id/appluedStatus"
+            app:layout_constraintStart_toStartOf="@+id/appluedStatus"
+            app:layout_constraintTop_toBottomOf="@+id/allJobTitle"></TextView>
+
+        <TextView
+            android:id="@+id/appluedStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status : Approved"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/Instruction"
+            app:layout_constraintStart_toStartOf="@+id/Instruction"
+            app:layout_constraintTop_toBottomOf="@+id/allJobLocation"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <TextView
+            android:id="@+id/Instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instruction/Announcement"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appluedStatus"
+            tools:ignore="MissingConstraints"></TextView>
+        <TextView
+            android:id="@+id/StatusJobId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applied Job ID"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
