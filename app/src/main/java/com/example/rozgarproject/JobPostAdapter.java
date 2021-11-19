@@ -2,10 +2,12 @@ package com.example.rozgarproject;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -69,7 +71,7 @@ public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.JobsView
             intent.putExtra("date",jobDate);
             intent.putExtra("numberOfWorkers",numberOfWorkers);
             intent.putExtra("JobPostID",JobpostID);
-
+            Toast.makeText(context, ""+JobpostID, Toast.LENGTH_SHORT).show();
             context.startActivity(intent);
         }
     }
