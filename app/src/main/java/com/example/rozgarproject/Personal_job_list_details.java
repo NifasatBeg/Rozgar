@@ -94,6 +94,7 @@ public class Personal_job_list_details extends AppCompatActivity {
         TextView RequiredWorkers = findViewById(R.id.RequiredSlot);
 //        String tmp = "Required Workers : " + RequiredWorkers;
         RequiredWorkers.setText(numberOfWorkers);
+        TextView bookedSlot = findViewById(R.id.BookedSlot);
 
 
         approvedLabourArrayList = new ArrayList<>();
@@ -154,6 +155,7 @@ public class Personal_job_list_details extends AppCompatActivity {
                         requestListAdapter.setRequestList(requestList);
                         requestListAdapter.setRequestList(requestList);
                         approvedLabourAdapter.setApprovedLabourList(approvedLabourArrayList);
+                        bookedSlot.setText("Slot Booked : " + approvedLabourArrayList.size());
 
                         recyclerView1.setAdapter(approvedLabourAdapter);
                         recyclerView2.setAdapter(requestListAdapter);
