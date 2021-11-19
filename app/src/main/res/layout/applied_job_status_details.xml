@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginVertical="10dp"
     android:layout_marginHorizontal="10dp"
     android:elevation="5dp">
@@ -20,6 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="JobTitle"
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/allJobLocation"
             app:layout_constraintStart_toStartOf="@+id/allJobLocation"
             app:layout_constraintTop_toTopOf="parent"></TextView>
@@ -29,6 +31,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="JobLocation"
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/appluedStatus"
             app:layout_constraintStart_toStartOf="@+id/appluedStatus"
             app:layout_constraintTop_toBottomOf="@+id/allJobTitle"></TextView>
@@ -37,9 +41,10 @@
             android:id="@+id/appluedStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
             android:text="Status : Approved"
-
-
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/Instruction"
             app:layout_constraintStart_toStartOf="@+id/Instruction"
             app:layout_constraintTop_toBottomOf="@+id/allJobLocation"
@@ -49,7 +54,11 @@
             android:id="@+id/Instruction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
             android:text="Instruction/Announcement"
+            android:textSize="16dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appluedStatus"

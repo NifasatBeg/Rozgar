@@ -40,7 +40,7 @@
         <item>BabySitting</item>
         <item>Custom</item>
     </string-array>
-    <string name="JobStatus">View Your Jobs Status</string>
+    <string name="JobStatus"><u>View Your Jobs Status</u></string>
     <string name="WorkersReq">Need Workers?</string>
     <string name="CreateJobs"><u>Create Jobs</u></string>
     <string name="Title">Title</string>
@@ -67,5 +67,6 @@
     <string name="RequestWorkers">Please Enter Number of Workers Required</string>
     <string name="JobCreated">Job Created</string>
     <string name="SearchJobs">Available Openings</string>
+    <string name="jobs_available"><u>Jobs Available</u></string>
 
 </resources>

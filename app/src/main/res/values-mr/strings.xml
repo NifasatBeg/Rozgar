@@ -41,7 +41,7 @@
         <item>बाळ बसलेले</item>
         <item>सानुकूल</item>
     </string-array>
-    <string name="JobStatus">सर्व नोकरीची स्थिती पहा</string>
+    <string name="JobStatus"><u>सर्व नोकरीची स्थिती पहा</u></string>
     <string name="WorkersReq">कामगारांची गरज आहे का?</string>
     <string name="CreateJobs"><u>नोकऱ्या तयार करा</u></string>
     <string name="Title">शीर्षक</string>
@@ -68,4 +68,5 @@
     <string name="RequestWorkers">कृपया आवश्यक कामगारांची संख्या प्रविष्ट करा</string>
     <string name="JobCreated">नोकरी निर्माण झाली</string>
     <string name="SearchJobs">उपलब्ध उघडणे</string>
+    <string name="jobs_available"><u>Jobs Available</u></string>
 </resources>

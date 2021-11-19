@@ -41,7 +41,7 @@
         <item>बेबी सिटिंग</item>
         <item>रीति</item>
     </string-array>
-    <string name="JobStatus">सभी नौकरी की स्थिति देखें</string>
+    <string name="JobStatus"><u>सभी नौकरी की स्थिति देखें</u></string>
     <string name="WorkersReq">श्रमिकों की आवश्यकता है?</string>
     <string name="CreateJobs"><u>नौकरियां बनाएं</u></string>
     <string name="Title">शीर्षक</string>
@@ -68,4 +68,5 @@
     <string name="RequestWorkers">कृपया आवश्यक श्रमिकों की संख्या दर्ज करें</string>
     <string name="JobCreated">नौकरी सृजित</string>
     <string name="SearchJobs">उपलब्ध उद्घाटन</string>
+    <string name="jobs_available"><u>Jobs Available</u></string>
 </resources>
