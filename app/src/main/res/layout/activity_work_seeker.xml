@@ -9,12 +9,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <Button
@@ -22,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:text="View Status" />
 
@@ -30,39 +32,11 @@
                 android:id="@+id/Speechbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
                 android:text="Voice Button" />
         </LinearLayout>
 
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/Filter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:text="Filter"
-                android:textSize="10sp"></Button>
-
-            <Button
-                android:id="@+id/ViewAllJobs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:text="View All Jobs"
-                android:textSize="10sp"></Button>
-        </RelativeLayout>
         <EditText
             android:id="@+id/SearchLocation"
             android:layout_width="match_parent"
@@ -100,11 +74,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
             android:text="@string/jobs_available"
+            android:textAllCaps="true"
             android:textColor="@color/colorPrimary"
             android:textSize="22sp"
             android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="Filter"
+                android:textSize="10sp"></Button>
+
+            <Button
+                android:id="@+id/ViewAllJobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="View All Jobs"
+                android:textSize="10sp"></Button>
+        </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_all_job_id"

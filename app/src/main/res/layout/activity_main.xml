@@ -10,17 +10,14 @@
         android:id="@+id/language"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="25dp"
         android:text="@string/Language"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/register"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/register"
-        app:layout_constraintTop_toTopOf="@+id/register"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/register" />
 
     <EditText
         android:id="@+id/email"
@@ -148,7 +145,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="25dp"
         android:layout_marginBottom="30dp"
         android:text="@string/NewUser"
         android:textColor="@color/colorPrimary"

@@ -65,7 +65,7 @@
     <string name="RequestWages">Please Enter the Daily wages amount</string>
     <string name="RequestHrs">Please Enter Number of Working Hours</string>
     <string name="RequestWorkers">Please Enter Number of Workers Required</string>
-    <string name="JobCreated">Job Created</string>
+    <string name="JobCreated"><u>Jobs Created</u></string>
     <string name="SearchJobs">Available Openings</string>
     <string name="jobs_available"><u>Jobs Available</u></string>
 

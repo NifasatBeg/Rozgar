@@ -10,15 +10,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Rozgar/app/src/main/res/layout/activity_work_provider.xml" value="0.2" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Rozgar/app/src/main/res/layout/activity_work_seeker.xml" value="0.2" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Rozgar/app/src/main/res/layout/personal_job_list.xml" value="0.2" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/drawable/ic_record_voice_over.xml" value="0.18888888888888888" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/activity_personal_job_list_details.xml" value="0.2" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/activity_post_job.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/activity_view_applied_status.xml" value="0.2" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/activity_work_provider.xml" value="0.1" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/activity_work_seeker.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/all_jobs_list.xml" value="0.2" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/layout_labour_request.xml" value="0.2" />
-        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/personal_job_list.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Downloads/Rozgar/app/src/main/res/layout/activity_work_seeker.xml" value="0.1" />
         <entry key="..\:/Users/Nifasat/AndroidStudioProjects/Rozgar3/app/src/main/res/layout/all_jobs_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Nifasat/AndroidStudioProjects/RozgarProject/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/Nifasat/AndroidStudioProjects/RozgarProject/app/src/main/res/layout/activity_register_user.xml" value="0.1" />
@@ -28,35 +20,22 @@
         <entry key="..\:/Users/Nifasat/Downloads/Rozgar-master/app/src/main/res/layout/activity_register_user.xml" value="0.1" />
         <entry key="..\:/Users/Nifasat/Downloads/Rozgar-master/app/src/main/res/layout/activity_work_provider.xml" value="0.15715579710144928" />
         <entry key="..\:/Users/Nifasat/Downloads/Rozgar-master/app/src/main/res/layout/personal_job_list.xml" value="0.25" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/button_bg.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/call.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/ic_age.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/ic_category.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/ic_email.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/ic_home.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/ic_job.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/ic_password.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/ic_person.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/icphone.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/input_bg.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/input_bg_2.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/drawable/wave.xml" value="0.2526041666666667" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_forgot_password.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_openings.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_personal_job_list_details.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_personal_jobs_applied.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_personal_jobs_created.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_post_job.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_register_user.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_view_applied_status.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_work_provider.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/activity_work_seeker.xml" value="0.264" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/all_jobs_list.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/applied_job_status_details.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/layout_approved_labours.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/layout_labour_request.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_new/app/src/main/res/layout/personal_job_list.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/drawable/call.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_forgot_password.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_personal_job_list_details.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_personal_jobs_applied.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_personal_jobs_created.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_post_job.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_register_user.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_view_applied_status.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_work_provider.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/activity_work_seeker.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/all_jobs_list.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/applied_job_status_details.xml" value="0.264" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/layout_approved_labours.xml" value="0.6" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/layout_labour_request.xml" value="0.536" />
+        <entry key="..\:/Users/suvan/AndroidStudioProjects/Rozgar_final/app/src/main/res/layout/personal_job_list.xml" value="0.23645833333333333" />
       </map>
     </option>
   </component>

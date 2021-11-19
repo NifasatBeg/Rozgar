@@ -15,18 +15,21 @@
             android:id="@+id/RAge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Age : 35"
+            android:layout_marginTop="5dp"
             android:paddingLeft="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/RContactNumber"
+            android:text="Age : 35"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/RContactNumber"
             app:layout_constraintTop_toBottomOf="@+id/RLabourName"></TextView>
 
         <TextView
             android:id="@+id/RLabourName"
-            android:layout_width="132dp"
-            android:layout_height="18dp"
-            android:text="Name : Rohan Bondre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:paddingLeft="5dp"
+            android:text="Name : Rohan Bondre"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/RAge"
             app:layout_constraintStart_toStartOf="@+id/RAge"
             app:layout_constraintTop_toTopOf="parent"></TextView>
@@ -35,29 +38,34 @@
             android:id="@+id/RContactNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact : 9897654321"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
             android:paddingLeft="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Contact : 9897654321"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RAge"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="91dp"></TextView>
+            tools:ignore="MissingConstraints"></TextView>
 
         <Button
             android:id="@+id/Accept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
             android:text="ACCEPT"
+            android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/Reject"
             app:layout_constraintEnd_toEndOf="@+id/Reject"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/Reject"
             app:layout_constraintTop_toTopOf="parent"></Button>
 
         <Button
             android:id="@+id/Reject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
             android:text="REJECT"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Accept"

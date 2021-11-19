@@ -19,39 +19,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="1"
-            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
             android:text="Job Title..."
             android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#000000"></TextView>
+            android:textColor="#000000"
+            android:textSize="20sp"></TextView>
 
         <TextView
             android:id="@+id/JobDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="1"
-            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
             android:text="25 July 2018"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#000000"></TextView>
+            android:textColor="#000000"
+            android:textSize="16sp"></TextView>
 
         <TextView
             android:id="@+id/WorkersNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
             android:text="Workers Remaining"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"></TextView>
+            android:textColor="#000000"
+            android:textSize="16sp"></TextView>
 
         <TextView
             android:id="@+id/PostJobID"
-            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="1"
+            android:padding="5dp"
             android:text="Workers Remaining"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"></TextView>
+            android:textColor="#000000"
+            android:visibility="gone"></TextView>
 
     </LinearLayout>
 

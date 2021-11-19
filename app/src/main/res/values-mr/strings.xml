@@ -66,7 +66,7 @@
     <string name="RequestWages">कृपया रोजंदारीची रक्कम प्रविष्ट करा</string>
     <string name="RequestHrs">कृपया कामाच्या तासांची संख्या प्रविष्ट करा</string>
     <string name="RequestWorkers">कृपया आवश्यक कामगारांची संख्या प्रविष्ट करा</string>
-    <string name="JobCreated">नोकरी निर्माण झाली</string>
+    <string name="JobCreated"><u>नोकरी निर्माण झाली</u></string>
     <string name="SearchJobs">उपलब्ध उघडणे</string>
     <string name="jobs_available"><u>Jobs Available</u></string>
 </resources>

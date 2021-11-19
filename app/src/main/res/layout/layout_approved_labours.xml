@@ -21,7 +21,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name : Rohan Bondre"
-            app:layout_constraintBottom_toTopOf="@+id/LabourAge"
             app:layout_constraintStart_toStartOf="@+id/LabourAge"
             app:layout_constraintTop_toTopOf="parent"></TextView>
 
@@ -30,7 +29,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Age : 35"
-            app:layout_constraintBottom_toTopOf="@+id/LabourNumber"
             app:layout_constraintStart_toStartOf="@+id/LabourNumber"
             app:layout_constraintTop_toBottomOf="@+id/LabourName"></TextView>
 
@@ -38,21 +36,21 @@
             android:id="@+id/LabourNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="Contact : 9897654321"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/LabourAge"
-            tools:layout_editor_absoluteX="32dp"
             tools:ignore="MissingConstraints"></TextView>
 
         <ImageView
             android:id="@+id/connectPhone"
             android:layout_width="52dp"
             android:layout_height="36dp"
+            android:layout_marginEnd="10dp"
             android:src="@drawable/call"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.691"
-            app:layout_constraintStart_toEndOf="@+id/LabourName"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
