@@ -80,7 +80,11 @@ public class ApprovedLabourAdapter extends RecyclerView.Adapter<ApprovedLabourAd
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             String tmp = ContactNumber.getText().toString();
-                            Uri u = Uri.parse("tel:" + tmp);
+                            String phoneno = "";
+                            for(int i=3;i<tmp.length();i++){
+                                phoneno += tmp.charAt(i);
+                            }
+                            Uri u = Uri.parse("tel:" + phoneno);
                             Intent intent = new Intent(Intent.ACTION_DIAL,u);
 //                            Log.d("no",ContactNumber.getText().toString() + "");
                             activity.startActivity(intent);

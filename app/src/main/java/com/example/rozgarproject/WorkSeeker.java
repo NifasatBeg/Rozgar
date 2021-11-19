@@ -7,12 +7,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class WorkSeeker extends AppCompatActivity implements View.OnClickListener{
     Button filter,viewAll,applyFilter,viewStatusofApplied;
@@ -29,6 +33,10 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
     List<allJobs> list;
     allJobsAdapter adapter;
     DatabaseReference reference;
+    TextToSpeech toSpeech;
+    Button btn_speechtext;
+    String Speechout;
+    static int voicebreak = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +47,7 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
         applyFilter = findViewById(R.id.ApplyFilter);
         location = findViewById(R.id.SearchLocation);
         salary = findViewById(R.id.SearchSalary);
+        btn_speechtext = findViewById(R.id.Speechbtn);
         viewStatusofApplied = findViewById(R.id.AppliedStatusbutton);
         viewStatusofApplied.setOnClickListener(WorkSeeker.this);
         filter.setOnClickListener(WorkSeeker.this);
@@ -46,6 +55,53 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
         applyFilter.setOnClickListener(WorkSeeker.this);
         reference = FirebaseDatabase.getInstance().getReference().child("Job Posts");
         list = new ArrayList<>();
+
+        toSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if(i!= TextToSpeech.ERROR){
+                    toSpeech.setLanguage(Locale.ENGLISH);
+                }
+            }
+        });
+
+        /*speechRecognizer.stopListening();
+
+        Make a speech recognition listener and write up this code to get the data processed(add angular brackets behind String):
+        ArrayList .String. data = results.getStringArrayList(speechRecognizer.RESULTS_RECOGNITION);
+        editText.setText(data.get(0));*/
+
+
+
+        btn_speechtext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                voicebreak += 1;
+                if(voicebreak == 1){
+                    int count = 1;
+                    Speechout = "";
+                    for(allJobs obj : list){
+                        String tmp = ", Job Number " + count;
+                        tmp += ", Job Title " + obj.JobTitle;
+                        tmp += ", Created On " + obj.JobDate;
+                        tmp += ", Location " + obj.JobLocation;
+                        tmp += ", Job Salary " + obj.salary;
+                        tmp += ", Workers Required " + obj.NumberofWorkers;
+                        Speechout += tmp;
+                    }
+                    Log.d("dbrohan","anyth" +list.size() +Speechout);
+
+                    toSpeech.speak(Speechout,TextToSpeech.QUEUE_FLUSH,null);
+                }
+                else {
+                    voicebreak = 0;
+                    toSpeech.stop();
+                }
+            }
+        });
+
+
+
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
         recyclerView.setHasFixedSize(true);
