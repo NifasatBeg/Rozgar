@@ -88,6 +88,7 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
                         tmp += ", Job Salary " + obj.salary;
                         tmp += ", Workers Required " + obj.NumberofWorkers;
                         Speechout += tmp;
+                        count += 1;
                     }
                     Log.d("dbrohan","anyth" +list.size() +Speechout);
 
