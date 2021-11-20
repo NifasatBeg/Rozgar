@@ -68,5 +68,13 @@
     <string name="RequestWorkers">कृपया आवश्यक कामगारांची संख्या प्रविष्ट करा</string>
     <string name="JobCreated"><u>नोकरी निर्माण झाली</u></string>
     <string name="SearchJobs">उपलब्ध उघडणे</string>
-    <string name="jobs_available"><u>Jobs Available</u></string>
+    <string name="jobs_available"><u>नोकऱ्या उपलब्ध</u></string>
+    <string name="Apply"><u>अर्ज करा</u></string>
+    <string name="Filter"><u>फिल्टर करा</u></string>
+    <string name="View_all_Jobs"><u>सर्व नोकऱ्या पहा</u></string>
+    <string name="View_status"><u>स्थिती पहा</u></string>
+    <string name="Voice_Button"><u>व्हॉइस बटण</u></string>
+    <string name="Job_Title"><u>नौकरी का नाम</u></string>
+    <string name="Job_location"><u>नोकरी स्थान</u></string>
+    <string name="status"><u>स्थिति</u></string>
 </resources>

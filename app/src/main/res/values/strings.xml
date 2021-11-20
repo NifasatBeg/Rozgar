@@ -68,5 +68,13 @@
     <string name="JobCreated"><u>Jobs Created</u></string>
     <string name="SearchJobs">Available Openings</string>
     <string name="jobs_available"><u>Jobs Available</u></string>
+    <string name="Apply"><u>APPLY</u></string>
+    <string name="Filter"><u>FILTER</u></string>
+    <string name="View_all_Jobs"><u>VIEW ALL JOBS</u></string>
+    <string name="View_status"><u>VIEW STATUS</u></string>
+    <string name="Voice_Button"><u>VOICE BUTTON</u></string>
+    <string name="Job_Title"><u>JOB TITLE</u></string>
+    <string name="Job_location"><u>JOB LOCATION</u></string>
+    <string name="status"><u>STATUS</u></string>
 
 </resources>

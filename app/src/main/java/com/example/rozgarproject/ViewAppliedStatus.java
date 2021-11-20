@@ -118,7 +118,7 @@ public class ViewAppliedStatus extends AppCompatActivity {
                                 else{
                                     status = "Rejected";
                                 }
-                                AppliedStatusObj job1 = new AppliedStatusObj(jobID,status,announcement,JobLocation,JobTitle);
+                                AppliedStatusObj job1 = new AppliedStatusObj(jobID,"Status - " + status,announcement,"Job Location - " + JobLocation,"Job Title - "+JobTitle);
                                 approvedjoblist.add(job1);
                             }
                         }
