@@ -86,7 +86,7 @@ public class Personal_job_list_details extends AppCompatActivity {
         String date = intent.getStringExtra("date");
         String numberOfWorkers = intent.getStringExtra("numberOfWorkers");
         String jobID = intent.getStringExtra("JobPostID");
-        Toast.makeText(Personal_job_list_details.this, "ID : " + jobID , Toast.LENGTH_SHORT).show();
+//        Toast.makeText(Personal_job_list_details.this, "ID : " + jobID , Toast.LENGTH_SHORT).show();
         TextView JobTitle = findViewById(R.id.JobTitle);
         JobTitle.setText(title);
         TextView creationDate = findViewById(R.id.creationDate);

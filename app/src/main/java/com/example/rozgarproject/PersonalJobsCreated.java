@@ -53,7 +53,7 @@ public class PersonalJobsCreated extends AppCompatActivity {
                     String numberofWorkers = "Workers Required = " + snapshot.child("workersNumber").getValue(String.class);
                     String jobID = snapshot.child("jobId").getValue(String.class);
                     JobPost post = new JobPost(Jobtitle,JobDate,numberofWorkers,jobID);
-                    Toast.makeText(PersonalJobsCreated.this, " " + uid, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(PersonalJobsCreated.this, " " + uid, Toast.LENGTH_SHORT).show();
                     list.add(post);
                 }
                 adapter = new JobPostAdapter(list,PersonalJobsCreated.this);

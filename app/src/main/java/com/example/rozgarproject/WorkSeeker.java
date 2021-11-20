@@ -119,7 +119,7 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
                         String jobId = ds1.child("jobId").getValue(String.class);
                         String salary = ds1.child("salary").getValue(String.class);
                         String apply = "Apply";
-                        allJobs job = new allJobs(JobTitle, JobDate,JobWorkers,JobLocation,recruiterId,jobId,salary,apply);
+                        allJobs job = new allJobs("JOB TITLE - " + JobTitle, "JOB CREATED ON - "+JobDate,"WORKERS REQUIRED - " +JobWorkers, "LOCATION - " +JobLocation,recruiterId,jobId,"SALARY - " + salary,apply);
                         list.add(job);
                     }
                 }
