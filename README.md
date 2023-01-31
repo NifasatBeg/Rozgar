@@ -14,7 +14,7 @@ Objectives :
   7. To provide Voice to text feature in the application.
  
 
--> Frontend Views of Home and main activity pages
+-> Screenshots of Apps Labour's and job provider's interface
 
 
 
