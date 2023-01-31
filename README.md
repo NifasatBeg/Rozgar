@@ -17,5 +17,6 @@ Objectives :
 -> Frontend Views of Home and main activity pages
 
 <img width="287" alt="image" src="https://user-images.githubusercontent.com/74046613/177540973-8ad20ef2-dda7-4c46-aae4-39f3bb0a2477.png">
+![r1](https://user-images.githubusercontent.com/74046613/215743315-775172c4-e060-41a0-be8a-cd323e0282f6.jpeg)
 
 
