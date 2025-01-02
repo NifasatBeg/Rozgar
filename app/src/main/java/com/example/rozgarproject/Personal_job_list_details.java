@@ -104,7 +104,6 @@ public class Personal_job_list_details extends AppCompatActivity {
         readData(new MyCallback() {
             @Override
             public void onCallback(List<String> userIDlist) {
-                Log.d("dbrohan","size : " + userIDlist.size());
 
                 recyclerView1 = findViewById(R.id.ApprovedLabourList);
                 recyclerView1.setLayoutManager(new LinearLayoutManager(Personal_job_list_details.this));
@@ -125,7 +124,6 @@ public class Personal_job_list_details extends AppCompatActivity {
 
                         for(DataSnapshot ds: snapshot.getChildren()){
                             String jobId1 = ds.getKey();
-                            Log.d("dbrohan", "onDataChange1: " + jobId1);
                             boolean check = false;
                             String tmpID1 = "";
                             for (String tmpID : userIDlist){
@@ -139,7 +137,6 @@ public class Personal_job_list_details extends AppCompatActivity {
                             String jname = ds.child("fullName").getValue(String.class);
                             String jage = ds.child("age").getValue(String.class);
                             String jnumber = ds.child("phoneNumber").getValue(String.class);
-                            Log.d("task",jname + jage + jobID + jnumber);
 
                             if(tmpID1.endsWith("1")){
                                 Request rohan1 = new Request("Name : " + jname, "Age : "+jage, "Contact number : "+jnumber, fetchID(tmpID1),jobID);
@@ -168,10 +165,6 @@ public class Personal_job_list_details extends AppCompatActivity {
                 });
             }
         },jobID);
-        Log.d("dbrohan", "Please toast something : " + userIDlist.size());
-        for(String tmp : userIDlist) {
-            Log.d("dbrohan", tmp);
-        }
 
     }
 }

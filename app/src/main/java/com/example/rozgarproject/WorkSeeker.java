@@ -90,7 +90,6 @@ public class WorkSeeker extends AppCompatActivity implements View.OnClickListene
                         Speechout += tmp;
                         count += 1;
                     }
-                    Log.d("dbrohan","anyth" +list.size() +Speechout);
 
                     toSpeech.speak(Speechout,TextToSpeech.QUEUE_FLUSH,null);
                 }
