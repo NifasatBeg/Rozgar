@@ -47,7 +47,6 @@ public class ViewAppliedStatus extends AppCompatActivity {
                     }
                 }
 
-                Log.d("task3","Size" + userIDlist.size());
                 callback.onResponse(userIDlist);
             }
 
@@ -70,7 +69,6 @@ public class ViewAppliedStatus extends AppCompatActivity {
         DatabaseReference reference;
         mAuth = FirebaseAuth.getInstance();
         String uid = mAuth.getCurrentUser().getUid();
-        Log.d("task2",uid);
         reference = FirebaseDatabase.getInstance().getReference().child("AppliedWorkers");
         userIDlist = new ArrayList<>();
         approvedjoblist = new ArrayList<>();
@@ -78,7 +76,6 @@ public class ViewAppliedStatus extends AppCompatActivity {
         readFirebaseName(new FirebaseCallback(){
             @Override
             public void onResponse(List<String> userIDlist) {
-                Log.d("dbrohan","size : " + userIDlist.size());
 
                 recyclerView4 = findViewById(R.id.ApprovedAppliedList);
                 recyclerView4.setLayoutManager(new LinearLayoutManager(ViewAppliedStatus.this));
@@ -101,7 +98,6 @@ public class ViewAppliedStatus extends AppCompatActivity {
                                     }
                                 }
                                 if(check == false) continue;
-                                Log.d("task",tmpID1);
                                 String JobTitle = ds1.child("JobTitle").getValue(String.class);
                                 String JobLocation = ds1.child("address").getValue(String.class);
                                 String jobId = "12";
@@ -122,7 +118,6 @@ public class ViewAppliedStatus extends AppCompatActivity {
                                 approvedjoblist.add(job1);
                             }
                         }
-                        Log.d("task","" + approvedjoblist.size());
                         appliedJobStatusAdapterr.setApprovedjobList(approvedjoblist);
                         recyclerView4.setAdapter(appliedJobStatusAdapterr);
                     }

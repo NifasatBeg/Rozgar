@@ -78,7 +78,6 @@ public class RequestListAdapter extends RecyclerView.Adapter<RequestListAdapter.
             AcceptRequest = itemView.findViewById(R.id.Accept);
             RejectRequest = itemView.findViewById(R.id.Reject);
 //            String tmp = RequestedID.getText().toString();
-            Log.d("task",LabourName.getText().toString() + Age.getText().toString());
             AcceptRequest.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -88,9 +87,7 @@ public class RequestListAdapter extends RecyclerView.Adapter<RequestListAdapter.
                     DatabaseReference reference;
                     mAuth = FirebaseAuth.getInstance();
                     String uid = mAuth.getCurrentUser().getUid();
-                    Log.d("task1",jid);
                     FirebaseDatabase.getInstance().getReference("AppliedWorkers").child(jid).child(RequesteduserID.getText().toString()).setValue("2");
-                    Log.d("task1",RequesteduserID.getText().toString());
 //                    Log.d("task1",jid);
                     AcceptRequest.setText("Accepted request");
 //                    Toast.makeText(context,"approved",Toast.LENGTH_SHORT).show();
@@ -106,9 +103,7 @@ public class RequestListAdapter extends RecyclerView.Adapter<RequestListAdapter.
                     DatabaseReference reference;
                     mAuth = FirebaseAuth.getInstance();
                     String uid = mAuth.getCurrentUser().getUid();
-                    Log.d("task1",jid);
                     FirebaseDatabase.getInstance().getReference("AppliedWorkers").child(jid).child(RequesteduserID.getText().toString()).setValue("3");
-                    Log.d("task1",RequesteduserID.getText().toString());
 //                    Log.d("task1",jid);
                     AcceptRequest.setText("Accepted request");
 //                    Toast.makeText(context,"approved",Toast.LENGTH_SHORT).show();
